@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		688461171F54092E009E6519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688461161F54092E009E6519 /* AppDelegate.swift */; };
+		688461191F54092E009E6519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688461181F54092E009E6519 /* ViewController.swift */; };
+		6884611C1F54092E009E6519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6884611A1F54092E009E6519 /* Main.storyboard */; };
+		6884611E1F54092E009E6519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6884611D1F54092E009E6519 /* Assets.xcassets */; };
+		688461211F54092E009E6519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6884611F1F54092E009E6519 /* LaunchScreen.storyboard */; };
+		6884612C1F54092E009E6519 /* ContactCardAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6884612B1F54092E009E6519 /* ContactCardAppTests.swift */; };
+		688461371F54092E009E6519 /* ContactCardAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688461361F54092E009E6519 /* ContactCardAppUITests.swift */; };
+		688461471F541943009E6519 /* PersonStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688461461F541943009E6519 /* PersonStartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		688461281F54092E009E6519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6884610B1F54092E009E6519 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688461121F54092E009E6519;
+			remoteInfo = ContactCardApp;
+		};
+		688461331F54092E009E6519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6884610B1F54092E009E6519 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 688461121F54092E009E6519;
+			remoteInfo = ContactCardApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		688461131F54092E009E6519 /* ContactCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		688461161F54092E009E6519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		688461181F54092E009E6519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6884611B1F54092E009E6519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6884611D1F54092E009E6519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		688461201F54092E009E6519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		688461221F54092E009E6519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688461271F54092E009E6519 /* ContactCardAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactCardAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6884612B1F54092E009E6519 /* ContactCardAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardAppTests.swift; sourceTree = "<group>"; };
+		6884612D1F54092E009E6519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688461321F54092E009E6519 /* ContactCardAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactCardAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		688461361F54092E009E6519 /* ContactCardAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCardAppUITests.swift; sourceTree = "<group>"; };
+		688461381F54092E009E6519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		688461461F541943009E6519 /* PersonStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonStartViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		688461101F54092E009E6519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688461241F54092E009E6519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6884612F1F54092E009E6519 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6884610A1F54092E009E6519 = {
+			isa = PBXGroup;
+			children = (
+				688461151F54092E009E6519 /* ContactCardApp */,
+				6884612A1F54092E009E6519 /* ContactCardAppTests */,
+				688461351F54092E009E6519 /* ContactCardAppUITests */,
+				688461141F54092E009E6519 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		688461141F54092E009E6519 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				688461131F54092E009E6519 /* ContactCardApp.app */,
+				688461271F54092E009E6519 /* ContactCardAppTests.xctest */,
+				688461321F54092E009E6519 /* ContactCardAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		688461151F54092E009E6519 /* ContactCardApp */ = {
+			isa = PBXGroup;
+			children = (
+				688461161F54092E009E6519 /* AppDelegate.swift */,
+				688461181F54092E009E6519 /* ViewController.swift */,
+				6884611A1F54092E009E6519 /* Main.storyboard */,
+				6884611D1F54092E009E6519 /* Assets.xcassets */,
+				6884611F1F54092E009E6519 /* LaunchScreen.storyboard */,
+				688461221F54092E009E6519 /* Info.plist */,
+				688461461F541943009E6519 /* PersonStartViewController.swift */,
+			);
+			path = ContactCardApp;
+			sourceTree = "<group>";
+		};
+		6884612A1F54092E009E6519 /* ContactCardAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6884612B1F54092E009E6519 /* ContactCardAppTests.swift */,
+				6884612D1F54092E009E6519 /* Info.plist */,
+			);
+			path = ContactCardAppTests;
+			sourceTree = "<group>";
+		};
+		688461351F54092E009E6519 /* ContactCardAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				688461361F54092E009E6519 /* ContactCardAppUITests.swift */,
+				688461381F54092E009E6519 /* Info.plist */,
+			);
+			path = ContactCardAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		688461121F54092E009E6519 /* ContactCardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6884613B1F54092E009E6519 /* Build configuration list for PBXNativeTarget "ContactCardApp" */;
+			buildPhases = (
+				6884610F1F54092E009E6519 /* Sources */,
+				688461101F54092E009E6519 /* Frameworks */,
+				688461111F54092E009E6519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactCardApp;
+			productName = ContactCardApp;
+			productReference = 688461131F54092E009E6519 /* ContactCardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		688461261F54092E009E6519 /* ContactCardAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6884613E1F54092E009E6519 /* Build configuration list for PBXNativeTarget "ContactCardAppTests" */;
+			buildPhases = (
+				688461231F54092E009E6519 /* Sources */,
+				688461241F54092E009E6519 /* Frameworks */,
+				688461251F54092E009E6519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688461291F54092E009E6519 /* PBXTargetDependency */,
+			);
+			name = ContactCardAppTests;
+			productName = ContactCardAppTests;
+			productReference = 688461271F54092E009E6519 /* ContactCardAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		688461311F54092E009E6519 /* ContactCardAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688461411F54092E009E6519 /* Build configuration list for PBXNativeTarget "ContactCardAppUITests" */;
+			buildPhases = (
+				6884612E1F54092E009E6519 /* Sources */,
+				6884612F1F54092E009E6519 /* Frameworks */,
+				688461301F54092E009E6519 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				688461341F54092E009E6519 /* PBXTargetDependency */,
+			);
+			name = ContactCardAppUITests;
+			productName = ContactCardAppUITests;
+			productReference = 688461321F54092E009E6519 /* ContactCardAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6884610B1F54092E009E6519 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jordy Sipkema";
+				TargetAttributes = {
+					688461121F54092E009E6519 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					688461261F54092E009E6519 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 688461121F54092E009E6519;
+					};
+					688461311F54092E009E6519 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 688461121F54092E009E6519;
+					};
+				};
+			};
+			buildConfigurationList = 6884610E1F54092E009E6519 /* Build configuration list for PBXProject "ContactCardApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6884610A1F54092E009E6519;
+			productRefGroup = 688461141F54092E009E6519 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				688461121F54092E009E6519 /* ContactCardApp */,
+				688461261F54092E009E6519 /* ContactCardAppTests */,
+				688461311F54092E009E6519 /* ContactCardAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		688461111F54092E009E6519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688461211F54092E009E6519 /* LaunchScreen.storyboard in Resources */,
+				6884611E1F54092E009E6519 /* Assets.xcassets in Resources */,
+				6884611C1F54092E009E6519 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688461251F54092E009E6519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688461301F54092E009E6519 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6884610F1F54092E009E6519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688461191F54092E009E6519 /* ViewController.swift in Sources */,
+				688461471F541943009E6519 /* PersonStartViewController.swift in Sources */,
+				688461171F54092E009E6519 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		688461231F54092E009E6519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6884612C1F54092E009E6519 /* ContactCardAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6884612E1F54092E009E6519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688461371F54092E009E6519 /* ContactCardAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		688461291F54092E009E6519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688461121F54092E009E6519 /* ContactCardApp */;
+			targetProxy = 688461281F54092E009E6519 /* PBXContainerItemProxy */;
+		};
+		688461341F54092E009E6519 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 688461121F54092E009E6519 /* ContactCardApp */;
+			targetProxy = 688461331F54092E009E6519 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6884611A1F54092E009E6519 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6884611B1F54092E009E6519 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6884611F1F54092E009E6519 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				688461201F54092E009E6519 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		688461391F54092E009E6519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6884613A1F54092E009E6519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6884613C1F54092E009E6519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ContactCardApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avans.MAD.ContactCardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6884613D1F54092E009E6519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ContactCardApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avans.MAD.ContactCardApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6884613F1F54092E009E6519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContactCardAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avans.MAD.ContactCardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactCardApp.app/ContactCardApp";
+			};
+			name = Debug;
+		};
+		688461401F54092E009E6519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContactCardAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avans.MAD.ContactCardAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactCardApp.app/ContactCardApp";
+			};
+			name = Release;
+		};
+		688461421F54092E009E6519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ContactCardAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avans.MAD.ContactCardAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ContactCardApp;
+			};
+			name = Debug;
+		};
+		688461431F54092E009E6519 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = ContactCardAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.avans.MAD.ContactCardAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ContactCardApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6884610E1F54092E009E6519 /* Build configuration list for PBXProject "ContactCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688461391F54092E009E6519 /* Debug */,
+				6884613A1F54092E009E6519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6884613B1F54092E009E6519 /* Build configuration list for PBXNativeTarget "ContactCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6884613C1F54092E009E6519 /* Debug */,
+				6884613D1F54092E009E6519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6884613E1F54092E009E6519 /* Build configuration list for PBXNativeTarget "ContactCardAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6884613F1F54092E009E6519 /* Debug */,
+				688461401F54092E009E6519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		688461411F54092E009E6519 /* Build configuration list for PBXNativeTarget "ContactCardAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				688461421F54092E009E6519 /* Debug */,
+				688461431F54092E009E6519 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6884610B1F54092E009E6519 /* Project object */;
+}
