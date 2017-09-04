@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6kg-zm-wMB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Browse users-->
+        <scene sceneID="6du-Dz-fOT">
+            <objects>
+                <collectionViewController id="caE-5R-IkP" customClass="UserCellCollectionViewController" customModule="ContactCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Cpg-Km-Oh9">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Su-90-ril">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="userCell" id="evP-aI-ZGW" customClass="UserPhotoCell" customModule="ContactCardApp" customModuleProvider="target">
+                                <rect key="frame" x="88" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Xrw-n4-JnC">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Xrw-n4-JnC" firstAttribute="centerY" secondItem="evP-aI-ZGW" secondAttribute="centerY" id="689-wl-KCb"/>
+                                    <constraint firstItem="Xrw-n4-JnC" firstAttribute="leading" secondItem="evP-aI-ZGW" secondAttribute="leading" id="H2H-pf-S0K"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xrw-n4-JnC" secondAttribute="trailing" id="SlL-8Q-N2Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xrw-n4-JnC" secondAttribute="bottom" id="TD8-EM-rI6"/>
+                                    <constraint firstItem="Xrw-n4-JnC" firstAttribute="centerX" secondItem="evP-aI-ZGW" secondAttribute="centerX" id="eeI-qb-TMQ"/>
+                                    <constraint firstItem="Xrw-n4-JnC" firstAttribute="top" secondItem="evP-aI-ZGW" secondAttribute="top" id="hi6-A5-hPw"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="userImage" destination="Xrw-n4-JnC" id="0sj-kp-7O6"/>
+                                    <segue destination="iXX-20-4eh" kind="show" identifier="UserDetailSegue" id="Fw6-9Y-2Qc"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="caE-5R-IkP" id="oLc-iw-g1m"/>
+                            <outlet property="delegate" destination="caE-5R-IkP" id="dzf-83-z7Y"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Browse users" id="dDC-Vt-UgY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Cpg-Km-Oh9" id="vdM-Re-Grw"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONR-wc-wDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="-453.82308845577217"/>
+        </scene>
+        <!--User detail-->
+        <scene sceneID="TCG-YN-u2Y">
+            <objects>
+                <viewController title="User detail" id="iXX-20-4eh" customClass="UserDetailViewController" customModule="ContactCardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jQU-IC-LYv"/>
+                        <viewControllerLayoutGuide type="bottom" id="ykb-y6-mwC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jm6-Wn-1mq">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="3Dx-uj-IiE" userLabel="UserImage">
+                                <rect key="frame" x="87" y="16" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3Dx-uj-IiE" secondAttribute="height" multiplier="1:1" id="21G-uI-usc"/>
+                                    <constraint firstAttribute="height" constant="200" id="6hH-qp-JNy">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWI-RZ-4dq" userLabel="Last Name">
+                                <rect key="frame" x="144" y="224" width="87.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5z-J4-ZdW" userLabel="First Name">
+                                <rect key="frame" x="168.5" y="260.5" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Dx-uj-IiE" firstAttribute="top" secondItem="jQU-IC-LYv" secondAttribute="bottom" constant="16" id="3gq-k2-gwv"/>
+                            <constraint firstItem="f5z-J4-ZdW" firstAttribute="top" secondItem="mWI-RZ-4dq" secondAttribute="bottom" constant="10" id="Cj9-WE-Nnc"/>
+                            <constraint firstItem="mWI-RZ-4dq" firstAttribute="top" secondItem="3Dx-uj-IiE" secondAttribute="bottom" constant="8" id="JJF-ju-iEa"/>
+                            <constraint firstItem="3Dx-uj-IiE" firstAttribute="centerX" secondItem="jm6-Wn-1mq" secondAttribute="centerX" id="LeE-Xd-nok"/>
+                            <constraint firstItem="3Dx-uj-IiE" firstAttribute="width" secondItem="3Dx-uj-IiE" secondAttribute="height" multiplier="1:1" id="NG1-J8-QV5"/>
+                            <constraint firstItem="f5z-J4-ZdW" firstAttribute="centerX" secondItem="jm6-Wn-1mq" secondAttribute="centerX" id="gaz-6L-Ot7"/>
+                            <constraint firstItem="mWI-RZ-4dq" firstAttribute="centerX" secondItem="jm6-Wn-1mq" secondAttribute="centerX" id="uZw-p5-0sv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FirstNameLabel" destination="f5z-J4-ZdW" id="s9V-Xx-7Wy"/>
+                        <outlet property="LastNameLabel" destination="mWI-RZ-4dq" id="bgg-GG-jjl"/>
+                        <outlet property="UserImage" destination="3Dx-uj-IiE" id="Ei7-G5-kOA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O46-AL-Z7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901.5999999999999" y="-454.72263868065971"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Puk-1C-PDH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kg-zm-wMB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="U66-57-Rdp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="caE-5R-IkP" kind="relationship" relationship="rootViewController" id="I9K-KW-Xbj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4r-H4-KDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-15.199999999999999" y="-453.82308845577217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AvatarPlaceholder" width="145" height="121"/>
+    </resources>
+</document>
